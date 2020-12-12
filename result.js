@@ -146,12 +146,6 @@ $(document).ready(function () {
             y: height - 40,
             fill: "black"
         }).font(font_title);
-        svg.image("SVGS/qrcode.svg").attr({
-            x: 360,
-            y: 530,
-            width: 200,
-            height: 200,
-        });
         svg.text("基于8values的倾向测试").attr({
             x: 370,
             y: height - 60,
