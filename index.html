@@ -35,21 +35,14 @@
     <div class="jumbotron jumbotron-fluid text-center mb-0">
         <p>Yet Another Values Test是一个基于8Values的在中国语境下的测试。</p>
         <!-- QR Code -->
-        <div id="qrcode-container">
-            <img src="SVGS/qrcode.svg" id="qrcode" alt="qrcode"/>
-            <p>
-                <a class="btn btn-info shadow text-white" href="shareYAVT.png" download>
-                    <span class="fi-cloud-download" title="save" aria-hidden="true"></span>
-                    保存图片
-                </a>
-                <a class="btn btn-light shadow" href="http://www.twitter.com/share?url=yetanothervaluestest.github.io">
-                    <span class="icon-twitter" title="share" aria-hidden="true"></span>
-                    Tweet
-                </a>
-            </p>
-        </div>
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    <p class="card-text">你将会看到一系列观点，请点击对应按钮选择你对于每个观点的看法，请尽量放在中国语境下思考。</p>
+                    <p class="card-text">你可能会看到一些会对你的世界观造成强烈冲击的观点,这些观点仅用于测试,不意味着作者或其他人持有这些观点。</p>
+                    <p class="card-text"><strong>注意：</strong>我们不会收集你的个人信息。</p>
+                </div>
         <div>
-            <button class="btn btn-primary btn-lg shadow" data-toggle="modal" data-target="#startmodal">点击开始</button>
+<a class="btn btn-success btn-block" href="quiz.html?question=yavt_0_2_1"></a>
         </div>
     </div>
     <!-- 模态框 -->
@@ -64,12 +57,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
-                <!-- 模态框主体 -->
-                <div class="modal-body">
-                    <p class="card-text">你将会看到一系列观点，请点击对应按钮选择你对于每个观点的看法，请尽量放在中国语境下思考。</p>
-                    <p class="card-text">你可能会看到一些会对你的世界观造成强烈冲击的观点,这些观点仅用于测试,不意味着作者或其他人持有这些观点。</p>
-                    <p class="card-text"><strong>注意：</strong>我们不会收集你的个人信息。</p>
-                </div>
+
 
                 <!-- 模态框底部 -->
                 <div class="modal-footer">
@@ -96,18 +84,5 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.4.1.js"></script>
-    <script>
-        $(document).ready(function(){
-            const select = $("#version-list");
-            const question_index = {
-                "YAVT 0.1.0": "yavt_0_1_0",
-                "YAVT 0.2.1": "yavt_0_2_1",
-                "8 Values": "8-values",
-            };
-            for (let [question_name, question_file] of Object.entries(question_index)){
-                select.append(`<a class='dropdown-item' href='quiz.html?question=${question_file}'>${question_name}</a>`)
-            }
-        });
-    </script>
 </body>
 </html>
