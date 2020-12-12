@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,35 @@
     <link rel="shortcut icon" type="x-icon" href="icon.png">
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
     <link href="open-iconic/font/css/open-iconic-foundation.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #e9f1e9;
+        }
 
+        a,
+        a:hover {
+            color: #296324;
+            text-decoration: none;
+        }
+
+        .navbar {
+            background: #e9f1e9;
+        }
+
+        .glass {
+            border: 2px solid #296324;
+            line-height: 2;
+            border-radius: 0px;
+        }
+
+        .btn,
+        .form-control,
+        .input-group-text,
+        .badge,
+        .alert {
+            border-radius: 0px;
+        }
+    </style>
     <title>YAVT</title>
 </head>
 
@@ -31,19 +60,19 @@
             </ul>
         </div>
     </nav>
-
-    <div class="jumbotron jumbotron-fluid text-center mb-0">
-        <p>Yet Another Values Test是一个基于8Values的在中国语境下的测试。</p>
-        <!-- QR Code -->
-                <!-- 模态框主体 -->
-                <div class="modal-body">
-                    <p class="card-text">你将会看到一系列观点，请点击对应按钮选择你对于每个观点的看法，请尽量放在中国语境下思考。</p>
-                    <p class="card-text">你可能会看到一些会对你的世界观造成强烈冲击的观点,这些观点仅用于测试,不意味着作者或其他人持有这些观点。</p>
-                    <p class="card-text"><strong>注意：</strong>我们不会收集你的个人信息。</p>
-                    <p>来自Github上的开源项目</p>
-                </div>
-        <div>
-<a class="btn btn-success btn-block" href="quiz.html?question=yavt_0_2_1">立即开始</a>
+    <div class="container">
+        <div class="card glass"> <br>
+            <div class="container">
+                <h1 class="text-center" id="h">YAVT</h1>
+                <p>Yet Another Values Test是一个基于8Values的在中国语境下的测试。</p>
+                <p>你将会看到一系列观点，请点击对应按钮选择你对于每个观点的看法，请尽量放在中国语境下思考。</p>
+                <p>你可能会看到一些会对你的世界观造成强烈冲击的观点,这些观点仅用于测试,不意味着作者或其他人持有这些观点。</p>
+                <p><strong>注意：</strong>我们不会收集你的个人信息。</p>
+                <p>来自Github上的开源项目<br>
+                    fork from https://github.com/YetAnotherValuesTest/YetAnotherValuesTest.github.io</p>
+                    <a class="btn btn-success btn-block" href="quiz.html?question=yavt_0_2_1">立即开始</a>
+            </div>
+            <br>
         </div>
     </div>
 
@@ -51,4 +80,5 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap-4.4.1.js"></script>
 </body>
+
 </html>
